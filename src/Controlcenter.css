@@ -1,0 +1,49 @@
+.control-center-container {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 50%;
+  margin: 10px;
+}
+
+.big-timer-container {
+  border: 2px solid purple;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.lowerhalf-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.lowerhalf-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.lowerhalf-item > button {
+  width: 100%;
+  margin: 10px;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+/* #player-name {
+  text-align: justify;
+} */
+.player-display {
+  display: inline-block;
+}
+/* #player-dash {
+  text-align: center;
+} */
+/* #player-time {
+  text-align: end;
+} */

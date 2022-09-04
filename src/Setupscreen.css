@@ -1,0 +1,101 @@
+
+.setup-screen {
+  text-align: center;
+}
+
+.header {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+#inputs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.inputs-flex-item {
+  margin: 20px;
+}
+
+.grace-period-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.grace-period-item {
+}
+.grace-period-toggle {
+  /* margin-left: auto; */
+  margin: 20px;
+
+  /* justify-self: flex-end; */
+  /* position: absolute; */
+}
+
+
+.players-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.players-flex-item {
+  /* justify-content: center; */
+  margin: 20px;
+}
+/* DND DRAG-N-DROP*/
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+.dnd {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 75%;
+}
+.dnd li {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  cursor: move;
+  background-color: #466783;
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  transition: all 0.2s;
+}
+.dnd li:hover {
+  background-color: #dfbb55!important;
+
+}
+
+/* Icons */
+.delete-player-icon {
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.delete-player-icon:hover {
+  color: black;
+  transform: scale(1.5)
+}
+
+/* Buttons */
+button {
+  width: 25%;
+  display: inline-block
+}
+
+#add-player-btn:hover {
+  cursor: pointer;
+}
+
+#start-game-btn {
+  background-color: greenyellow;
+}
+#start-game-btn:hover {
+  cursor: pointer;
+}
