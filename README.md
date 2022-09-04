@@ -1,19 +1,19 @@
 # Terra Mystica Game Clock
 
 ## Identified Need
-The Terra Mystica board game is awesome.  If you haven't played it, I recommend that you give it a shot. (there even online tournaments!)
+The Terra Mystica board game is awesome.  If you haven't played it, I recommend that you give it a shot - (there even online tournaments!)\
 Those who _have_ enjoyed this complex and inheritly long game, know that it can drag on, especially if one or more players decide to compute all possible future variations before they make each and every move.\
-Thus, a 2-3 hour game magically becames a 5-6 hour affair!  Now, I'm up for an occasional all-day game, but sometimes you've got places to be, like Comic-Con or Dance class.\
+Thus, a 2-3 hour game magically becames a 5-6 hour affair!  Now, I'm up for an occasional all-day game, but sometimes you've got places to be, like Comic-Con or Dance class.
 
 __NEED IDENTIFIED - a way to keep the game moving at a reasonable pace.__
 
-## The Problem
+## The Problem - specifics
 * Customize for more than 2 players
 * A player able to turn out of round while other players keep going
 * Pause between rounds
 * Re-order player order based on who first turned out of previous round (that player goes first next round)
 
-## The Solution?\
+## The Solution?
 The Terra Mystica Game Clock!\
 Here you will find a game clock built based on the concept of a chess clock without its limitations.
 
