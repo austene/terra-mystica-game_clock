@@ -12,7 +12,10 @@
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://austene.github.io/terra-mystica-game_clock/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "tm-clock -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
