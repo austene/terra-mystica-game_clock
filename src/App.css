@@ -8,7 +8,9 @@ make the navigation links stack on top of each other instead of next to each oth
 }
 
 body {
-  background: linear-gradient(rgb(162, 109, 211), rgb(144, 71, 213)) ;
+  background: linear-gradient(120deg, rgb(205, 173, 235), rgb(129, 61, 192));
+  background-repeat:no-repeat;
+  height: 100vh;
 }
 
 

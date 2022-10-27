@@ -10,9 +10,7 @@ function App() {
   const [currentScreen, setCurrentScreen] = useState('SetupScreen');
   const [isGameRunning, setIsGameRunning] = useState(true);
   const [currentRound, setCurrentRound] = useState(1);
-  const maxRounds = 3; //move to correct page when figured out & update to 6 rounds for TM
-
-  // const [firstPrevRoundTurnOutId, setFirstPrevRoundTurnOutId] = useState(null);
+  const maxRounds = 6; 
 
   const initialStartingTime = 60 //minutes
   const [startingTimePerPlayer, setStartingTimePerPlayer] = useState(initialStartingTime);
@@ -49,7 +47,6 @@ function App() {
               setCurrentScreen={setCurrentScreen}
               setIsGameRunning={setIsGameRunning}
             />
-          // break;
 
           case 'PlayingScreen':
             return <Playingscreen
@@ -63,7 +60,6 @@ function App() {
               currentRound={currentRound}
               maxRounds={maxRounds}
             />
-          // break;
 
           case 'PauseBtwRoundsScreen':
             return <Pausebtwroundsscreen

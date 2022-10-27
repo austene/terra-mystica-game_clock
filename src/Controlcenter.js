@@ -75,8 +75,6 @@ const Controlcenter = ({
 
   //COUNTDOWN FUNCTION
   const countDownCallback = () => {
-    // console.log(playersArray)
-    // debugger
     if (player.time > 0) {
       let updatedArray = playersArray.map(mapPlayer => {
         return (mapPlayer.id === player.id) ? 
