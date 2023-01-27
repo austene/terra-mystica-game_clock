@@ -32,6 +32,10 @@ function App() {
 
   return (
     <div className='app'>
+      <header className="header" id='title'>
+        <h1>Terra Mystica Game Clock</h1>
+      </header>
+
       {(() => {
         switch(currentScreen){
           case 'SetupScreen': 

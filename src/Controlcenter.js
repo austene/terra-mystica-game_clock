@@ -1,4 +1,5 @@
 import './Controlcenter.css';
+import './App.css';
 import React from 'react';
 import useInterval from './CustomHooks.js';
 import DisplayTime from './DisplayTime.js';
@@ -224,6 +225,8 @@ const Controlcenter = ({
       <div className='lowerhalf-container'>
         <div className='lowerhalf-item left-column'>
           <button
+            id='end-turn-btn'
+            className='standard-btn secondary-color-btn short-btn'
             disabled={!player.isTimerRunning || player.isLastPlayerInRound}
             onClick={() => handleEndTurn(player.id)}
           > 
@@ -231,6 +234,8 @@ const Controlcenter = ({
           </button>
             {player.isLastPlayerInRound && <div>Click End Round when ready.  All other players have turned out of current round.</div>}
           <button
+            id='end-round-btn'
+            className='standard-btn primary-color-btn short-btn'
             disabled={!player.isTimerRunning}
             onClick={() => handleEndRound(player.id)}
           >

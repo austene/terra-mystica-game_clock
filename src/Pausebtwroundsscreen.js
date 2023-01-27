@@ -47,7 +47,6 @@ const Pausebtwroundsscreen = ({
   return(
     <div className='pause-btw-rounds-screen'>
       <header className='header'>
-        <h1>Terra Mystica Game Clock</h1>
         <h2>Timer Paused</h2>
       </header>
       <div id='pause-container'>
@@ -55,6 +54,7 @@ const Pausebtwroundsscreen = ({
         <p>Distribute income and reset board for Round {nextRound}.</p>
         <button
           id='start-next-round-btn'
+          className='standard-btn primary-color-btn short-btn'
           onClick={() => handleStartRound()}
         >
           Start Round {nextRound}

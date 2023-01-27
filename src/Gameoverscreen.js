@@ -1,4 +1,5 @@
 import './Gameoverscreen.css';
+import './buttons.css';
 import React from 'react';
 
 const Gameoverscreen = ({
@@ -16,9 +17,33 @@ const Gameoverscreen = ({
   setCurrentRound,
 }) => {
 
+    //BREAK SECONDS INTO HR/MIN/SEC DISPLAY
+    const prettyTime = (timeInSecs) => {
+      const hours = Math.floor(timeInSecs / (60 * 60));
+      const minutes = Math.floor((timeInSecs % (60 * 60)) / 60);
+      const seconds = Math.floor(timeInSecs % 60);
+      
+      const twoDigits = (number) => 
+        (number).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
+      const display = `${twoDigits(hours)}:${twoDigits(minutes)}:${twoDigits(seconds)}`
+      return display
+    }
+
+  //SWITCH CASE
   const displayPlayersTimes = (player) => {
-    return player.isPlayerTimeZero ? 'Ran out of Time' : player.time
+    if (player.isPlayerTimeZero) {
+      //display ran out of time
+      return 'Ran out of Time'
+    } else if (player.time <= 0 && player.graceTimeRemaining > 0){
+      //display using grace period
+      return 'Grace Period'
+    } else {
+      //display time left
+      return prettyTime(player.time)
+    }
+    
   }
+   
 
   //GO TO PLAYING SCREEN, RESTARTS GAME WITH SAME SETUP DETAILS ie names, times, and grace settings
   const handlePlayAgain = () => {
@@ -60,10 +85,12 @@ const Gameoverscreen = ({
     setCurrentScreen('SetupScreen')
   }
 
+
+  
+
   return(
     <div className='game-over-screen'>
       <header className='header'>
-        <h1>Terra Mystica Game Clock</h1>
         <h2>Game Over</h2>
       </header>
       <div id='results-container'>
@@ -74,17 +101,17 @@ const Gameoverscreen = ({
           })}
         </ul>
         <button
-          className='results-flex-item'
+          className='results-flex-item standard-btn primary-color-btn short-btn'
           id='play-again-btn'
-          title='Play again with same players and time'
+          title='Play again with same players and time settings'
           onClick={() => handlePlayAgain()}
         >
           Play Again
         </button>
         <button
-          className='results-flex-item'
+          className='results-flex-item standard-btn primary-color-btn short-btn'
           id='reset-game-btn'
-          title='Change players and time to start a new game'
+          title='Change player and time settings to start a new game'
           onClick={() => handleResetGame()}
         >
           Reset Game

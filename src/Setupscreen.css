@@ -1,13 +1,4 @@
 
-.setup-screen {
-  text-align: center;
-}
-
-.header {
-  font-family: Verdana, Tahoma, sans-serif;
-  font-size: 12px;
-}
-
 #inputs-container {
   display: flex;
   flex-direction: column;
@@ -61,14 +52,14 @@
   /* align-items: center; */
   justify-content: space-around;
   cursor: move;
-  background-color: #466783;
+  background-color: #4892d8; /* inital color */
   color: white;
   padding: 10px;
   margin-bottom: 5px;
   transition: all 0.2s;
 }
 .dnd li:hover {
-  background-color: #dfbb55!important;
+  background-color: goldenrod!important; /* lighter ver. inital color */
 
 }
 
@@ -83,19 +74,3 @@
   transform: scale(1.5)
 }
 
-/* Buttons */
-button {
-  width: 25%;
-  display: inline-block
-}
-
-#add-player-btn:hover {
-  cursor: pointer;
-}
-
-#start-game-btn {
-  background-color: greenyellow;
-}
-#start-game-btn:hover {
-  cursor: pointer;
-}

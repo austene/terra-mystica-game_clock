@@ -17,9 +17,8 @@ const Playingscreen = ({
 
   return(
     <div className='playing-screen'>
-      <header className='header'>
-        <h1>Terra Mystica Game Clock</h1>
-        <h2>Playing Round {currentRound}</h2>
+      <header className="header">
+        <h2>Playing Round - {currentRound}</h2>
       </header>
       {playersArray.map(player =>
         <Controlcenter 

@@ -1,4 +1,5 @@
 import './Setupscreen.css';
+import './buttons.css';
 import ToggleButton from './ToggleButton';
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
@@ -71,7 +72,7 @@ const Setupscreen = ({
   };
   
   const handleDragEnter = (e, targetIndex) => {
-    e.target.style.backgroundColor = "#6286a6";
+    e.target.style.backgroundColor = "#deb570"; //enter target drop color ie light holver
     const newPlayersArray = [...playersArray]
     let player = newPlayersArray[dragItemIndex];
     newPlayersArray.splice(dragItemIndex, 1);
@@ -90,11 +91,11 @@ const Setupscreen = ({
   };
   
   const handleDragLeave = (e) => {
-    e.target.style.backgroundColor = "#466783";
+    e.target.style.backgroundColor = "#4892d8"; //targetzone left color ie initial color
   };
   
   const handleDrop = (e) => {
-    e.target.style.backgroundColor = "#466783";
+    e.target.style.backgroundColor = "#4892d8"; //dropped color ie initial color
   };
 
   //START GAME
@@ -122,8 +123,7 @@ const Setupscreen = ({
   return (
     <div className="setup-screen">
       <header className="header">
-        <h1>Terra Mystica Game Clock</h1>
-        <h2>Set-up</h2>
+        <h2>Select Preferences</h2>
       </header>
 
       <div id='inputs-container'>
@@ -205,6 +205,7 @@ const Setupscreen = ({
           <div className='players-flex-item'>
             <button
               id='add-player-btn'
+              className='standard-btn secondary-color-btn short-btn'
               onClick={() => handleAddPlayer()}
             >
               Add Player
@@ -215,6 +216,7 @@ const Setupscreen = ({
         <div className='inputs-flex-item'>
           <button
             id='start-game-btn'
+            className='standard-btn primary-color-btn long-btn'
             disabled={playersArray.length === 0}
             onClick={() => handleStartGame()}
           >
