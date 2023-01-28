@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/terra-mystica-game_clock/static/css/main.1193a66e.css",
-    "main.js": "/terra-mystica-game_clock/static/js/main.ab8ae4cb.js",
+    "main.css": "/terra-mystica-game_clock/static/css/main.a46a9a71.css",
+    "main.js": "/terra-mystica-game_clock/static/js/main.37e4ca9a.js",
     "static/js/787.9db70556.chunk.js": "/terra-mystica-game_clock/static/js/787.9db70556.chunk.js",
+    "static/media/pieces3.jpeg": "/terra-mystica-game_clock/static/media/pieces3.30756aa141b36c5cf603.jpeg",
     "index.html": "/terra-mystica-game_clock/index.html",
-    "main.1193a66e.css.map": "/terra-mystica-game_clock/static/css/main.1193a66e.css.map",
-    "main.ab8ae4cb.js.map": "/terra-mystica-game_clock/static/js/main.ab8ae4cb.js.map",
+    "main.a46a9a71.css.map": "/terra-mystica-game_clock/static/css/main.a46a9a71.css.map",
+    "main.37e4ca9a.js.map": "/terra-mystica-game_clock/static/js/main.37e4ca9a.js.map",
     "787.9db70556.chunk.js.map": "/terra-mystica-game_clock/static/js/787.9db70556.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1193a66e.css",
-    "static/js/main.ab8ae4cb.js"
+    "static/css/main.a46a9a71.css",
+    "static/js/main.37e4ca9a.js"
   ]
 }
